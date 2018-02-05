@@ -1,0 +1,16 @@
+<!--pages/BeatDog.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <image style="width:400px;height=200px;" mode="aspectFit" src="../../resources/dog.jpeg" class="BeatDog {{ClickBeatMe ? 'rotateRight' :'rotate0'}}"> </image>
+    <button bindtap="beatDog">Beat me!</button>
+    <text class="page__title">Beat Counts :  </text>
+    <text class="page__desc">{{BeatCounts}}</text>
+    <audio src="../../resources/1.mp3" id="myAudio"></audio>
+  </view>
+  <view class="viewLog">
+    <text class="log">{{logMsg}}</text>
+  </view>
+  <view class="section tc">
+    <video id="myVideo" src="https://wsqncdn.miaopai.com/stream/0RaDbwfBybbSdsCTSJ-e~NqRCVHx~yZo9pXd3w___32.mp4?ssig=c4b553a6d845cae0ca05b36554f341cc&time_stamp=1516526658706" enable-danmu danmu-btn controls></video>
+  </view>
+</view>

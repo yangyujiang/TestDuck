@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermychangename">
+   <text class="11111">{{name}}</text>
+  <!-- <button bindtap="changename">Click me!</button>-->
+   <button bindtap="gotoBeatDog">跳转到云打狗</button>
+
+  <!--<navigator url="/pages/BeatDog/BeatDog?title=BeatDog" open-type="navigate" hover-class="navigator-hover">跳转到云打狗</navigator>-->
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
