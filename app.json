@@ -2,12 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/BeatDog/BeatDog"
+    "pages/BeatDog/BeatDog",
+    "pages/Duck/Duck"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "云打狗",
+    "navigationBarTitleText": "主页",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#00eeee"
   },

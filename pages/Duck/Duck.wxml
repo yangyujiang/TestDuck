@@ -1,0 +1,10 @@
+<!--pages/Duck/Duck.wxml-->
+<view class="page">
+  <view class="home">
+    <image style="width:400px;height=200px;" mode="aspectFit" src="../../resources/duck.jpg">
+    </image>
+  </view>
+  <view class='items'>
+  <button bindtap='Travel'>Travel</button>
+  </view>
+</view>

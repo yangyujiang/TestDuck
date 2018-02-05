@@ -27,6 +27,12 @@ Page({
     })
   },
 
+  gotoDuck:function(e){
+    wx.navigateTo({
+      url: '../Duck/Duck',
+    })
+  },
+
   onLoad: function () {
     console.log('onLoad hahaha')
     var that = this
