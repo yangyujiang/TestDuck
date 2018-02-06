@@ -1,9 +1,23 @@
 <!--pages/Duck/Duck.wxml-->
 <view class="page">
-  <view class="home">
+  <view class="duck_hide{{showDuck?'duck_show':''}}">
     <image style="width:400px;height=200px;" mode="aspectFit" src="../../resources/duck.jpg">
     </image>
   </view>
+  <view class="duck_hide{{showDuck?'':'duck_show'}}">
+    <image style="width:400px;height=200px;" mode="aspectFit" src="../../resources/home.jpeg">
+    </image>
+  </view>
+
+  <view>
+  <checkbox-group bindchange="ItemsChanged"> 
+  <block class="checkbox" wx:for="{{items}}" wx:key="key">  
+    <checkbox  value="{{item.name}}"/>{{item.value}}  
+  </block>  
+
+  </checkbox-group>
+  </view>
+
   <view class='items'>
   <button bindtap='Travel'>Travel</button>
   </view>

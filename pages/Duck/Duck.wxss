@@ -1,1 +1,7 @@
 /* pages/Duck/Duck.wxss */
+.duck_hide{
+ display: none;
+}
+.duck_show{
+ display: block;
+}

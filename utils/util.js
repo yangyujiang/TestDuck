@@ -16,6 +16,11 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+function randomNum(min, max){
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  randomNum:randomNum
 }
